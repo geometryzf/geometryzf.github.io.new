@@ -13,7 +13,7 @@ export const siteConfig = {
   
   // 社交媒体
   social: {
-    github: 'https://github.com/yourusername',
+    github: 'https://github.com/geometryzf',
     linkedin: 'https://linkedin.com/in/yourusername',
     twitter: 'https://twitter.com/yourusername',
     blog: 'https://your-blog.vercel.app',
@@ -146,11 +146,11 @@ export const siteConfig = {
   
   // SEO配置
   seo: {
-    title: '你的名字 - 前端开发者',
+    title: 'geometryzf - 前端开发者',
     description: '个人技术博客和项目展示，专注于React、TypeScript、Next.js等前端技术',
     keywords: ['前端开发', 'React', 'TypeScript', 'Next.js', '全栈开发'],
-    url: 'https://your-domain.com',
-    image: 'https://your-domain.com/og-image.jpg',
+    url: 'https://geometryzf.github.io',
+    image: 'https://geometryzf.github.io/og-image.jpg',
   },
 }
 
