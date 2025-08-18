@@ -99,14 +99,13 @@ export default function Hero() {
               联系我
             </motion.a>
             <motion.a
-              href="/resume.docx"
+              href="/resume"
               className="btn-secondary flex items-center gap-2"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              download="郑斐个人简历.docx"
             >
-              <Download className="w-5 h-5" />
-              下载简历
+              <Eye className="w-5 h-5" />
+              查看简历
             </motion.a>
           </motion.div>
 

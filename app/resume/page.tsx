@@ -116,6 +116,40 @@ export default function ResumePage() {
         <div className="bg-white dark:bg-dark-800 rounded-2xl shadow-lg p-8">
           <ResumeDownload />
         </div>
+
+        <div className="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-2xl p-6 mt-8">
+          <div className="flex items-start space-x-4">
+            <div className="w-10 h-10 bg-blue-100 dark:bg-blue-800 rounded-lg flex items-center justify-center flex-shrink-0">
+              <Lock className="w-5 h-5 text-blue-600 dark:text-blue-400" />
+            </div>
+            <div>
+              <h3 className="text-lg font-semibold text-blue-900 dark:text-blue-100 mb-2">
+                隐私保护说明
+              </h3>
+              <p className="text-blue-800 dark:text-blue-200 text-sm mb-3">
+                为了保护个人信息安全，简历采用在线查看模式，具有以下保护措施：
+              </p>
+              <ul className="space-y-2 text-sm text-blue-700 dark:text-blue-300">
+                <li className="flex items-center space-x-2">
+                  <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
+                  <span>禁用下载功能，防止文件被保存到本地</span>
+                </li>
+                <li className="flex items-center space-x-2">
+                  <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
+                  <span>禁用右键菜单和快捷键，防止截图和复制</span>
+                </li>
+                <li className="flex items-center space-x-2">
+                  <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
+                  <span>添加水印保护，防止恶意使用</span>
+                </li>
+                <li className="flex items-center space-x-2">
+                  <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
+                  <span>如需完整版本或合作机会，请通过联系方式与我联系</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   )
