@@ -1,10 +1,11 @@
 'use client'
 
-import { useCallback } from 'react'
+import { useCallback, useState } from 'react'
 import { motion } from 'framer-motion'
 import { Mail, MapPin, Phone, Send } from 'lucide-react'
 import { siteConfig } from '@/config/site'
 import ResumeDownload from './ResumeDownload'
+import EmailSender from './EmailSender'
 
 const socialLinks = [
   { name: 'GitHub', url: siteConfig.social.github, icon: '🐙' },
@@ -14,6 +15,14 @@ const socialLinks = [
 ]
 
 export default function Contact() {
+  const [showEmailSender, setShowEmailSender] = useState(false)
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    subject: '',
+    message: ''
+  })
+
   const onSubmit = useCallback((e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     const form = e.currentTarget as any
@@ -22,8 +31,9 @@ export default function Contact() {
     const subject = form.subject.value?.trim() || '来自个人主页的消息'
     const message = form.message.value?.trim() || ''
 
-    const mailto = `mailto:${siteConfig.contact.email}?subject=${encodeURIComponent(`${subject} - 来自 ${name}`)}&body=${encodeURIComponent(`姓名: ${name}\n邮箱: ${email}\n\n${message}`)}`
-    window.location.href = mailto
+    // 保存表单数据并显示邮件发送器
+    setFormData({ name, email, subject, message })
+    setShowEmailSender(true)
   }, [])
 
   return (
@@ -113,6 +123,15 @@ export default function Contact() {
 
           <motion.div initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.6 }} viewport={{ once: true }}>
             <h3 className="text-2xl font-bold mb-8 text-gray-900 dark:text-gray-100">发送消息</h3>
+            <div className="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-4 mb-6">
+              <div className="flex items-start space-x-3">
+                <Mail className="w-5 h-5 text-blue-600 dark:text-blue-400 mt-0.5 flex-shrink-0" />
+                <div className="text-sm text-blue-800 dark:text-blue-200">
+                  <p className="font-medium mb-1">邮件发送说明</p>
+                  <p>填写表单后，系统将自动打开您的邮件客户端，预填充收件人、主题和内容。您只需点击发送即可。</p>
+                </div>
+              </div>
+            </div>
             <form className="space-y-6" onSubmit={onSubmit}>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div>
@@ -134,12 +153,52 @@ export default function Contact() {
               </div>
               <button type="submit" className="btn-primary w-full flex items-center justify-center gap-2">
                 <Send className="w-5 h-5" />
-                发送消息
+                准备发送邮件
               </button>
             </form>
           </motion.div>
         </div>
       </div>
+
+      {/* 邮件发送器弹窗 */}
+      {showEmailSender && (
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          className="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4"
+          onClick={() => setShowEmailSender(false)}
+        >
+          <motion.div
+            initial={{ scale: 0.9, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            exit={{ scale: 0.9, opacity: 0 }}
+            className="bg-white dark:bg-dark-800 rounded-2xl shadow-2xl w-full max-w-4xl max-h-[90vh] overflow-y-auto"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="p-6">
+              <div className="flex items-center justify-between mb-6">
+                <h3 className="text-xl font-bold text-gray-900 dark:text-gray-100">
+                  发送邮件给 {siteConfig.name}
+                </h3>
+                <button
+                  onClick={() => setShowEmailSender(false)}
+                  className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200"
+                >
+                  ✕
+                </button>
+              </div>
+              
+              <EmailSender
+                name={formData.name}
+                email={formData.email}
+                subject={formData.subject}
+                message={formData.message}
+              />
+            </div>
+          </motion.div>
+        </motion.div>
+      )}
     </section>
   )
 }
