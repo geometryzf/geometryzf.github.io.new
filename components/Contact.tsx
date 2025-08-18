@@ -4,6 +4,7 @@ import { useCallback } from 'react'
 import { motion } from 'framer-motion'
 import { Mail, MapPin, Phone, Send } from 'lucide-react'
 import { siteConfig } from '@/config/site'
+import ResumeDownload from './ResumeDownload'
 
 const socialLinks = [
   { name: 'GitHub', url: siteConfig.social.github, icon: '🐙' },
@@ -103,6 +104,10 @@ export default function Contact() {
                   </motion.a>
                 ))}
               </div>
+            </div>
+
+            <div className="mt-12">
+              <ResumeDownload />
             </div>
           </motion.div>
 
