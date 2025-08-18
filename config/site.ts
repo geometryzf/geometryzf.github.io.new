@@ -6,9 +6,10 @@ export const siteConfig = {
   
   // 联系信息
   contact: {
-    email: 'zhengfei.dev@gmail.com', // 请替换为你的真实邮箱
-    phone: '+86 138-0000-0000', // 请替换为你的真实电话
-    location: '中国，北京', // 请替换为你的真实地址
+    email: 'zhengfeichangzhou@foxmail.com', // 主要邮箱
+    phone: '+86 13775076103',
+    location: '中国，上海', // 现居地
+    locationDetail: '常住地：中国，江苏', // 常住地
   },
   
   // 社交媒体

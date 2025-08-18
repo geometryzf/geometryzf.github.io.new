@@ -65,6 +65,9 @@ export default function Contact() {
                 <div>
                   <h4 className="font-semibold text-gray-900 dark:text-gray-100">位置</h4>
                   <p className="text-gray-600 dark:text-gray-400">{siteConfig.contact.location}</p>
+                  {siteConfig.contact.locationDetail && (
+                    <p className="text-sm text-gray-500 dark:text-gray-500">{siteConfig.contact.locationDetail}</p>
+                  )}
                 </div>
               </div>
               <div className="flex items-center space-x-4">

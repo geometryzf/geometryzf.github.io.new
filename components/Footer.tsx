@@ -42,6 +42,9 @@ export default function Footer() {
             <h4 className="text-lg font-semibold mb-4">联系信息</h4>
             <div className="space-y-2 text-gray-400">
               <p>📍 {siteConfig.contact.location}</p>
+              {siteConfig.contact.locationDetail && (
+                <p className="text-sm">📍 {siteConfig.contact.locationDetail}</p>
+              )}
               <p>📧 {siteConfig.contact.email}</p>
               <p>📱 {siteConfig.contact.phone}</p>
             </div>
