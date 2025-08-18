@@ -4,13 +4,14 @@ import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { Github, Linkedin, Mail, Download, Sparkles } from 'lucide-react'
 import { siteConfig } from '@/config/site'
+import Avatar from './Avatar'
 
 export default function Hero() {
   const [currentText, setCurrentText] = useState('')
   const [currentIndex, setCurrentIndex] = useState(0)
   const [isDeleting, setIsDeleting] = useState(false)
   
-  const texts = ['前端开发者', '全栈工程师', 'UI/UX 设计师', '开源贡献者']
+  const texts = ['前端开发工程师', 'React 开发者', 'TypeScript 专家', '全栈工程师']
   
   useEffect(() => {
     const typeSpeed = isDeleting ? 50 : 150
@@ -46,26 +47,10 @@ export default function Hero() {
             transition={{ duration: 0.6 }}
             className="mb-8"
           >
-            <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-r from-primary-500 to-purple-600 p-1 relative">
-              <motion.div
-                className="w-full h-full rounded-full bg-white dark:bg-dark-800 flex items-center justify-center relative overflow-hidden"
-                whileHover={{ scale: 1.05 }}
-                transition={{ type: 'spring', stiffness: 300 }}
-              >
-                <span className="text-4xl font-bold gradient-text relative z-10">{siteConfig.name?.[0] ?? '我'}</span>
-                <motion.div
-                  className="absolute inset-0 bg-gradient-to-r from-primary-400/20 to-purple-500/20"
-                  animate={{
-                    rotate: [0, 360],
-                  }}
-                  transition={{
-                    duration: 8,
-                    repeat: Infinity,
-                    ease: 'linear',
-                  }}
-                />
-              </motion.div>
-            </div>
+            <Avatar 
+              name={siteConfig.name} 
+              imageUrl="/avatar.jpg" // 请将你的照片放在 public/avatar.jpg
+            />
           </motion.div>
 
           <motion.h1

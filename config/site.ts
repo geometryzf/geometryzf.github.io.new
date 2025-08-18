@@ -1,22 +1,22 @@
 export const siteConfig = {
   // 基本信息
-  name: '你的名字',
-  title: '前端开发者',
-  description: '专注于创建美观、高效、用户友好的Web应用程序。热爱学习新技术，追求代码质量和用户体验的完美结合。',
+  name: '郑斐',
+  title: '前端开发工程师',
+  description: '专注于React、TypeScript、Next.js等现代前端技术，具备全栈开发能力。热爱开源项目，追求代码质量和用户体验的完美结合。擅长组件化开发、性能优化和团队协作。',
   
   // 联系信息
   contact: {
-    email: 'your.email@example.com',
-    phone: '+86 138-0000-0000',
-    location: '中国，北京',
+    email: 'zhengfei.dev@gmail.com', // 请替换为你的真实邮箱
+    phone: '+86 138-0000-0000', // 请替换为你的真实电话
+    location: '中国，北京', // 请替换为你的真实地址
   },
   
   // 社交媒体
   social: {
     github: 'https://github.com/geometryzf',
-    linkedin: 'https://linkedin.com/in/yourusername',
-    twitter: 'https://twitter.com/yourusername',
-    blog: 'https://your-blog.vercel.app',
+    linkedin: 'https://linkedin.com/in/zhengfei-dev', // 请替换为你的LinkedIn链接
+    twitter: 'https://twitter.com/zhengfei_dev', // 请替换为你的Twitter链接
+    blog: 'https://zhengfei.dev', // 请替换为你的博客地址
   },
   
   // 技能配置
@@ -107,23 +107,23 @@ export const siteConfig = {
   
   // 关于我
   about: {
-    story: '从大学时期开始接触编程，我就被Web开发的无限可能性所吸引。经过多年的学习和实践，我逐渐形成了自己的开发理念：技术服务于用户，代码服务于团队。我相信好的代码不仅要实现功能，更要易于理解和维护。在每一个项目中，我都致力于创造既美观又实用的解决方案。',
+    story: '作为一名前端开发工程师，我专注于现代Web技术的应用和创新。从React生态系统到TypeScript类型安全，从Next.js全栈开发到性能优化，我致力于为用户创造流畅、高效的数字体验。在工作中，我注重代码质量和团队协作，相信技术的力量能够解决实际问题并创造价值。',
     features: [
       {
-        title: '代码质量',
-        description: '注重代码可读性和可维护性，遵循最佳实践和设计模式。',
+        title: '技术专长',
+        description: '精通React、TypeScript、Next.js等现代前端技术栈，具备全栈开发能力。',
       },
       {
-        title: '用户体验',
-        description: '以用户为中心的设计理念，创造直观易用的界面和流畅的交互。',
+        title: '性能优化',
+        description: '擅长前端性能优化、代码分割、懒加载等技术，提升用户体验。',
       },
       {
-        title: '创新思维',
-        description: '持续关注新技术趋势，善于将创新想法转化为实际解决方案。',
+        title: '团队协作',
+        description: '具备良好的沟通能力和团队协作精神，能够高效推进项目进展。',
       },
       {
-        title: '目标导向',
-        description: '明确项目目标，制定清晰的开发计划，确保按时交付高质量产品。',
+        title: '持续学习',
+        description: '保持对新技术的敏感度，持续学习并应用到实际项目中。',
       },
     ],
   },
