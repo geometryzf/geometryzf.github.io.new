@@ -2,7 +2,7 @@ export const siteConfig = {
   // 基本信息
   name: '郑斐',
   title: '算法工程师',
-  description: '专注于算法研究与优化，擅长动态规划(DP)、模型预测控制(MPC)、粒子群优化(PSO)、强化学习等算法。具备深厚的前端开发经验，同时精通Pascal、Fortran等经典编程语言和LaTeX学术写作，致力于将算法理论与实际应用相结合，解决复杂的技术挑战。',
+  description: '专注于算法研究与优化，擅长动态规划(DP)、模型预测控制(MPC)、粒子群优化(PSO)、强化学习等算法。具备深厚的前端开发经验，同时精通Pascal、Fortran等经典编程语言和LaTeX学术写作，致力于将算法理论与实际应用相结合，解决复杂的技术挑战。拥有多个开源项目，包括智能路径规划、MPC控制系统、PSO优化算法库等。',
   
   // 联系信息
   contact: {
@@ -60,43 +60,43 @@ export const siteConfig = {
   projects: [
     {
       title: '智能路径规划算法',
-      description: '基于动态规划和强化学习的智能路径规划系统，支持多目标优化和实时路径调整。',
-      technologies: ['Python', 'PyTorch', 'NumPy', '强化学习', '动态规划'],
+      description: '基于动态规划和强化学习的智能路径规划系统，支持多目标优化和实时路径调整。集成A*、Dijkstra、RRT等多种算法，提供完整的路径规划解决方案。',
+      technologies: ['Python', 'PyTorch', 'NumPy', '强化学习', '动态规划', 'A*算法'],
       github: 'https://github.com/geometryzf/path-planning',
-      demo: 'https://path-planning-demo.vercel.app',
+      demo: 'https://github.com/geometryzf/path-planning',
       featured: true,
       date: '2024',
-      contributors: 2,
+      contributors: 1,
     },
     {
       title: '模型预测控制系统',
-      description: '基于MPC算法的智能控制系统，用于工业过程优化和预测控制。',
-      technologies: ['Python', 'MATLAB', 'MPC', 'NumPy', 'SciPy'],
+      description: '基于MPC算法的智能控制系统，用于工业过程优化和预测控制。支持多变量控制、约束处理、实时控制等功能。',
+      technologies: ['Python', 'MATLAB', 'MPC', 'NumPy', 'SciPy', 'CVXPY'],
       github: 'https://github.com/geometryzf/mpc-system',
-      demo: 'https://mpc-system-demo.vercel.app',
+      demo: 'https://github.com/geometryzf/mpc-system',
       featured: true,
       date: '2024',
-      contributors: 3,
+      contributors: 1,
     },
     {
       title: '粒子群优化算法库',
-      description: '高性能的PSO算法实现，支持多目标优化和并行计算。',
-      technologies: ['Python', 'C++', 'PSO', 'NumPy', 'OpenMP'],
+      description: '高性能的PSO算法实现，支持多目标优化和并行计算。包含标准PSO、自适应PSO、混合PSO等多种变体。',
+      technologies: ['Python', 'C++', 'PSO', 'NumPy', 'OpenMP', '多目标优化'],
       github: 'https://github.com/geometryzf/pso-library',
-      demo: 'https://pso-demo.vercel.app',
+      demo: 'https://github.com/geometryzf/pso-library',
       featured: true,
-      date: '2023',
-      contributors: 2,
+      date: '2024',
+      contributors: 1,
     },
     {
       title: '任务管理应用',
-      description: '现代化的任务管理工具，支持拖拽排序、实时协作、数据可视化等功能。',
-      technologies: ['Next.js', 'TypeScript', 'Prisma', 'PostgreSQL', 'Framer Motion'],
+      description: '现代化的任务管理工具，支持拖拽排序、实时协作、数据可视化等功能。基于Next.js 14和TypeScript构建。',
+      technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'React DnD'],
       github: 'https://github.com/geometryzf/task-manager',
-      demo: 'https://task-manager-demo.vercel.app',
+      demo: 'https://github.com/geometryzf/task-manager',
       featured: true,
       date: '2024',
-      contributors: 2,
+      contributors: 1,
     },
     {
       title: '个人博客系统',
@@ -142,33 +142,33 @@ export const siteConfig = {
   
   // 关于我
   about: {
-    story: '作为一名算法工程师，我专注于算法研究与优化，在动态规划、模型预测控制、粒子群优化、强化学习等领域有深入研究。我致力于将复杂的算法理论转化为实际可用的解决方案，解决现实世界中的技术挑战。同时，我具备丰富的前端开发经验，能够将算法成果以直观的方式展示给用户。我还精通Pascal、Fortran等经典编程语言，这些语言在科学计算和数值分析中具有独特优势。此外，我熟练使用LaTeX进行学术写作，能够将研究成果以专业的方式呈现。我相信算法与工程的结合能够创造出更大的价值。',
-    features: [
-      {
-        title: '算法专长',
-        description: '精通动态规划、MPC、PSO、强化学习等核心算法，具备深厚的理论基础和实践经验。',
-      },
-      {
-        title: '经典编程',
-        description: '精通Pascal、Fortran等经典编程语言，在科学计算和数值分析方面具有独特优势。',
-      },
-      {
-        title: '工程实现',
-        description: '擅长将算法理论转化为高效的程序实现，注重代码质量和性能优化。',
-      },
-      {
-        title: '学术写作',
-        description: '熟练使用LaTeX进行学术写作，能够将研究成果以专业的方式呈现。',
-      },
-      {
-        title: '跨领域应用',
-        description: '能够将算法技术应用到不同领域，解决复杂的技术问题。',
-      },
-      {
-        title: '持续创新',
-        description: '保持对前沿算法的关注，持续学习和探索新的技术方向。',
-      },
-    ],
+    story: '作为一名算法工程师，我专注于算法研究与优化，在动态规划、模型预测控制、粒子群优化、强化学习等领域有深入研究。我致力于将复杂的算法理论转化为实际可用的解决方案，解决现实世界中的技术挑战。我已经成功开发了多个开源项目，包括智能路径规划算法、MPC控制系统、PSO优化算法库等，这些项目展示了我在算法实现和工程化方面的能力。同时，我具备丰富的前端开发经验，能够将算法成果以直观的方式展示给用户。我还精通Pascal、Fortran等经典编程语言，这些语言在科学计算和数值分析中具有独特优势。此外，我熟练使用LaTeX进行学术写作，能够将研究成果以专业的方式呈现。我相信算法与工程的结合能够创造出更大的价值。',
+          features: [
+        {
+          title: '算法专长',
+          description: '精通动态规划、MPC、PSO、强化学习等核心算法，具备深厚的理论基础和实践经验。',
+        },
+        {
+          title: '开源项目',
+          description: '成功开发多个开源项目，包括智能路径规划、MPC控制系统、PSO优化算法库等。',
+        },
+        {
+          title: '经典编程',
+          description: '精通Pascal、Fortran等经典编程语言，在科学计算和数值分析方面具有独特优势。',
+        },
+        {
+          title: '工程实现',
+          description: '擅长将算法理论转化为高效的程序实现，注重代码质量和性能优化。',
+        },
+        {
+          title: '学术写作',
+          description: '熟练使用LaTeX进行学术写作，能够将研究成果以专业的方式呈现。',
+        },
+        {
+          title: '跨领域应用',
+          description: '能够将算法技术应用到不同领域，解决复杂的技术问题。',
+        },
+      ],
   },
   
   // 主题配置
@@ -190,8 +190,8 @@ export const siteConfig = {
   // SEO配置
   seo: {
     title: 'geometryzf - 算法工程师',
-    description: '算法工程师个人主页，专注于动态规划、MPC、PSO、强化学习等算法研究与优化',
-    keywords: ['算法工程师', '动态规划', 'MPC', 'PSO', '强化学习', '机器学习', '深度学习', 'Pascal', 'Fortran', 'LaTeX', '科学计算'],
+    description: '算法工程师个人主页，专注于动态规划、MPC、PSO、强化学习等算法研究与优化。开源项目包括智能路径规划、MPC控制系统、PSO优化算法库、任务管理应用等。',
+    keywords: ['算法工程师', '动态规划', 'MPC', 'PSO', '强化学习', '机器学习', '深度学习', 'Pascal', 'Fortran', 'LaTeX', '科学计算', '智能路径规划', '模型预测控制', '粒子群优化', '任务管理', '开源项目'],
     url: 'https://geometryzf.github.io',
     image: 'https://geometryzf.github.io/og-image.jpg',
   },
