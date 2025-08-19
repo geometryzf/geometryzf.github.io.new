@@ -10,10 +10,10 @@ export default function Projects() {
   const otherProjects = projects.filter((p) => !p.featured)
 
   const imageMap: Record<string, string> = {
-    '智能路径规划算法': '/images/algorithm-flow.svg',
-    '模型预测控制系统': '/images/tech-roadmap.svg',
-    '粒子群优化算法库': '/images/research-areas.svg',
-    '任务管理应用': '/images/task-manager-tech.svg',
+    '智能路径规划算法': '/images/projects/path-planning-screenshot.svg',
+    '模型预测控制系统': '/images/projects/mpc-system-screenshot.svg',
+    '粒子群优化算法库': '/images/projects/pso-library-screenshot.svg',
+    '任务管理应用': '/images/projects/task-manager-screenshot.svg',
   }
 
   const getProjectImage = (title: string): string | null => {

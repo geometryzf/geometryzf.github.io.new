@@ -154,7 +154,7 @@ mpc-system/
 
 ## 📄 许可证
 
-MIT License
+个人
 
 ## 👨‍💻 作者
 
