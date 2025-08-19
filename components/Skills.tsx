@@ -14,6 +14,11 @@ import {
   SiDocker,
   SiGit,
   SiFigma,
+  SiPytorch,
+  SiTensorflow,
+  SiNumpy,
+  SiPandas,
+  SiCplusplus,
 } from 'react-icons/si'
 import { siteConfig } from '@/config/site'
 
@@ -30,10 +35,24 @@ const IconMap: Record<string, any> = {
   Docker: SiDocker,
   Git: SiGit,
   Figma: SiFigma,
+  PyTorch: SiPytorch,
+  TensorFlow: SiTensorflow,
+  NumPy: SiNumpy,
+  Pandas: SiPandas,
+  'C++': SiCplusplus,
 }
 
 export default function Skills() {
   const skillCategories = [
+    {
+      title: '算法专长',
+      skills: siteConfig.skills.algorithms.map((s) => ({
+        name: s.name,
+        icon: IconMap[s.name] || null,
+        level: s.level,
+        color: s.color,
+      })),
+    },
     {
       title: '前端技术',
       skills: siteConfig.skills.frontend.map((s) => ({
@@ -76,9 +95,9 @@ export default function Skills() {
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">
             <span className="gradient-text">技能专长</span>
           </h2>
-          <p className="text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-            以下是我在开发过程中掌握的主要技术栈和工具
-          </p>
+                      <p className="text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
+              以下是我在算法研究和开发过程中掌握的主要技术栈和工具
+            </p>
         </motion.div>
 
         <div className="space-y-12">
@@ -150,8 +169,8 @@ export default function Skills() {
               持续学习
             </h3>
             <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-              技术发展日新月异，我始终保持学习的热情。
-              目前正在深入学习云原生技术、微服务架构和人工智能应用开发。
+              算法技术发展日新月异，我始终保持学习的热情。
+              目前正在深入研究大语言模型、联邦学习和量子计算等前沿技术。
             </p>
           </div>
         </motion.div>

@@ -10,6 +10,7 @@ import Contact from '@/components/Contact'
 import Footer from '@/components/Footer'
 import ThemeToggle from '@/components/ThemeToggle'
 import GithubStats from '@/components/GithubStats'
+import ResearchVisualization from '@/components/ResearchVisualization'
 import ParticleBackground from '@/components/ParticleBackground'
 import FloatingElements from '@/components/FloatingElements'
 import MouseTrail from '@/components/MouseTrail'
@@ -57,6 +58,7 @@ export default function Home() {
         <About />
         <Skills />
         <Projects />
+        <ResearchVisualization />
         <GithubStats />
         <Contact />
       </main>

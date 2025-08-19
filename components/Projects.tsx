@@ -9,6 +9,17 @@ export default function Projects() {
   const featuredProjects = projects.filter((p) => p.featured)
   const otherProjects = projects.filter((p) => !p.featured)
 
+  const imageMap: Record<string, string> = {
+    '智能路径规划算法': '/images/algorithm-flow.svg',
+    '模型预测控制系统': '/images/tech-roadmap.svg',
+    '粒子群优化算法库': '/images/research-areas.svg',
+    '任务管理应用': '/images/task-manager-tech.svg',
+  }
+
+  const getProjectImage = (title: string): string | null => {
+    return imageMap[title] || null
+  }
+
   return (
     <section id="projects" className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-dark-800">
       <div className="max-w-7xl mx-auto">
@@ -39,8 +50,19 @@ export default function Projects() {
                 viewport={{ once: true }}
                 className="card overflow-hidden hover:shadow-xl transition-all duration-300"
               >
-                <div className="aspect-video bg-gradient-to-br from-primary-100 to-purple-100 dark:from-primary-900/20 dark:to-purple-900/20 flex items-center justify-center">
-                  <span className="text-gray-500 dark:text-gray-400">项目截图</span>
+                <div className="aspect-video bg-gradient-to-br from-primary-100 to-purple-100 dark:from-primary-900/20 dark:to-purple-900/20 overflow-hidden">
+                  {getProjectImage(project.title) ? (
+                    <img
+                      src={getProjectImage(project.title) as string}
+                      alt={`${project.title} 截图`}
+                      className="w-full h-full object-contain"
+                      loading="lazy"
+                    />
+                  ) : (
+                    <div className="w-full h-full flex items-center justify-center">
+                      <span className="text-gray-500 dark:text-gray-400">项目截图</span>
+                    </div>
+                  )}
                 </div>
                 <div className="p-6">
                   <div className="flex items-center justify-between mb-3">
@@ -88,8 +110,19 @@ export default function Projects() {
                 viewport={{ once: true }}
                 className="card overflow-hidden hover:shadow-xl transition-all duration-300"
               >
-                <div className="aspect-video bg-gradient-to-br from-gray-100 to-gray-200 dark:from-dark-700 dark:to-dark-600 flex items-center justify-center">
-                  <span className="text-gray-500 dark:text-gray-400">项目截图</span>
+                <div className="aspect-video bg-gradient-to-br from-gray-100 to-gray-200 dark:from-dark-700 dark:to-dark-600 overflow-hidden">
+                  {getProjectImage(project.title) ? (
+                    <img
+                      src={getProjectImage(project.title) as string}
+                      alt={`${project.title} 截图`}
+                      className="w-full h-full object-contain"
+                      loading="lazy"
+                    />
+                  ) : (
+                    <div className="w-full h-full flex items-center justify-center">
+                      <span className="text-gray-500 dark:text-gray-400">项目截图</span>
+                    </div>
+                  )}
                 </div>
                 <div className="p-4">
                   <div className="flex items-center justify-between mb-2">

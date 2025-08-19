@@ -10,6 +10,31 @@
   body {
     @apply bg-white dark:bg-dark-900 text-gray-900 dark:text-gray-100;
   }
+  
+  /* 所有段落文本两端对齐 */
+  p {
+    text-align: justify !important;
+  }
+  
+  /* 描述文本两端对齐 */
+  .description, .text-description {
+    text-align: justify !important;
+  }
+  
+  /* 故事文本两端对齐 */
+  .story-text, .about-story {
+    text-align: justify !important;
+  }
+  
+  /* 确保所有文本内容都两端对齐 */
+  .text-gray-600, .text-gray-400, .text-gray-500 {
+    text-align: justify !important;
+  }
+  
+  /* 联系信息和描述文本两端对齐 */
+  .contact-info p, .about-description p {
+    text-align: justify !important;
+  }
 }
 
 @layer components {

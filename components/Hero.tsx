@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
-import { Github, Linkedin, Mail, Download, Sparkles } from 'lucide-react'
+import { Github, Linkedin, Mail, Download, Sparkles, Eye } from 'lucide-react'
 import { siteConfig } from '@/config/site'
 import Avatar from './Avatar'
 
@@ -78,7 +78,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="text-xl text-gray-600 dark:text-gray-400 mb-8 max-w-3xl mx-auto"
+            className="text-xl text-gray-600 dark:text-gray-400 mb-8 max-w-4xl mx-auto"
           >
             {siteConfig.description}
           </motion.p>

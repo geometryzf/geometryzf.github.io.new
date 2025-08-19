@@ -1,8 +1,8 @@
 export const siteConfig = {
   // 基本信息
   name: '郑斐',
-  title: '前端开发工程师',
-  description: '专注于React、TypeScript、Next.js等现代前端技术，具备全栈开发能力。热爱开源项目，追求代码质量和用户体验的完美结合。擅长组件化开发、性能优化和团队协作。',
+  title: '算法工程师',
+  description: '专注于算法研究与优化，擅长动态规划(DP)、模型预测控制(MPC)、粒子群优化(PSO)、强化学习等算法。具备深厚的前端开发经验，同时精通Pascal、Fortran等经典编程语言和LaTeX学术写作，致力于将算法理论与实际应用相结合，解决复杂的技术挑战。',
   
   // 联系信息
   contact: {
@@ -22,37 +22,71 @@ export const siteConfig = {
   
   // 技能配置
   skills: {
+    algorithms: [
+      { name: '动态规划(DP)', level: 87, color: '#FF6B6B' },
+      { name: '模型预测控制(MPC)', level: 82, color: '#4ECDC4' },
+      { name: '粒子群优化(PSO)', level: 79, color: '#45B7D1' },
+      { name: '强化学习', level: 76, color: '#96CEB4' },
+      { name: '机器学习', level: 71, color: '#FFEAA7' },
+      { name: '深度学习', level: 66, color: '#DDA0DD' },
+    ],
     frontend: [
-      { name: 'React', level: 90, color: '#61DAFB' },
-      { name: 'TypeScript', level: 85, color: '#3178C6' },
-      { name: 'JavaScript', level: 90, color: '#F7DF1E' },
-      { name: 'Next.js', level: 80, color: '#000000' },
-      { name: 'Tailwind CSS', level: 85, color: '#06B6D4' },
+      { name: 'React', level: 82, color: '#61DAFB' },
+      { name: 'TypeScript', level: 76, color: '#3178C6' },
+      { name: 'JavaScript', level: 82, color: '#F7DF1E' },
+      { name: 'Next.js', level: 71, color: '#000000' },
+      { name: 'Tailwind CSS', level: 76, color: '#06B6D4' },
     ],
     backend: [
-      { name: 'Node.js', level: 75, color: '#339933' },
-      { name: 'Python', level: 70, color: '#3776AB' },
-      { name: 'MongoDB', level: 70, color: '#47A248' },
-      { name: 'PostgreSQL', level: 65, color: '#336791' },
+      { name: 'Python', level: 82, color: '#3776AB' },
+      { name: 'Node.js', level: 66, color: '#339933' },
+      { name: 'C++', level: 71, color: '#00599C' },
+      { name: 'MATLAB', level: 76, color: '#0076A8' },
+      { name: 'Pascal', level: 88, color: '#1976D2' },
+      { name: 'Fortran', level: 61, color: '#734F96' },
     ],
     tools: [
-      { name: 'Git', level: 85, color: '#F05032' },
-      { name: 'Docker', level: 60, color: '#2496ED' },
-      { name: 'Figma', level: 70, color: '#F24E1E' },
+      { name: 'Git', level: 76, color: '#F05032' },
+      { name: 'Docker', level: 55, color: '#2496ED' },
+      { name: 'PyTorch', level: 71, color: '#EE4C2C' },
+      { name: 'TensorFlow', level: 66, color: '#FF6F00' },
+      { name: 'NumPy', level: 82, color: '#4DABCF' },
+      { name: 'Pandas', level: 76, color: '#130654' },
+      { name: 'LaTeX', level: 76, color: '#008080' },
     ],
   },
   
   // 项目配置
   projects: [
     {
-      title: '电商管理平台',
-      description: '基于React + TypeScript + Node.js的全栈电商管理系统，包含商品管理、订单处理、用户管理等功能。',
-      technologies: ['React', 'TypeScript', 'Node.js', 'MongoDB', 'Tailwind CSS'],
-      github: 'https://github.com/geometryzf/ecommerce-platform',
-      demo: 'https://demo-ecommerce.vercel.app',
+      title: '智能路径规划算法',
+      description: '基于动态规划和强化学习的智能路径规划系统，支持多目标优化和实时路径调整。',
+      technologies: ['Python', 'PyTorch', 'NumPy', '强化学习', '动态规划'],
+      github: 'https://github.com/geometryzf/path-planning',
+      demo: 'https://path-planning-demo.vercel.app',
+      featured: true,
+      date: '2024',
+      contributors: 2,
+    },
+    {
+      title: '模型预测控制系统',
+      description: '基于MPC算法的智能控制系统，用于工业过程优化和预测控制。',
+      technologies: ['Python', 'MATLAB', 'MPC', 'NumPy', 'SciPy'],
+      github: 'https://github.com/geometryzf/mpc-system',
+      demo: 'https://mpc-system-demo.vercel.app',
       featured: true,
       date: '2024',
       contributors: 3,
+    },
+    {
+      title: '粒子群优化算法库',
+      description: '高性能的PSO算法实现，支持多目标优化和并行计算。',
+      technologies: ['Python', 'C++', 'PSO', 'NumPy', 'OpenMP'],
+      github: 'https://github.com/geometryzf/pso-library',
+      demo: 'https://pso-demo.vercel.app',
+      featured: true,
+      date: '2023',
+      contributors: 2,
     },
     {
       title: '任务管理应用',
@@ -108,23 +142,31 @@ export const siteConfig = {
   
   // 关于我
   about: {
-    story: '作为一名前端开发工程师，我专注于现代Web技术的应用和创新。从React生态系统到TypeScript类型安全，从Next.js全栈开发到性能优化，我致力于为用户创造流畅、高效的数字体验。在工作中，我注重代码质量和团队协作，相信技术的力量能够解决实际问题并创造价值。',
+    story: '作为一名算法工程师，我专注于算法研究与优化，在动态规划、模型预测控制、粒子群优化、强化学习等领域有深入研究。我致力于将复杂的算法理论转化为实际可用的解决方案，解决现实世界中的技术挑战。同时，我具备丰富的前端开发经验，能够将算法成果以直观的方式展示给用户。我还精通Pascal、Fortran等经典编程语言，这些语言在科学计算和数值分析中具有独特优势。此外，我熟练使用LaTeX进行学术写作，能够将研究成果以专业的方式呈现。我相信算法与工程的结合能够创造出更大的价值。',
     features: [
       {
-        title: '技术专长',
-        description: '精通React、TypeScript、Next.js等现代前端技术栈，具备全栈开发能力。',
+        title: '算法专长',
+        description: '精通动态规划、MPC、PSO、强化学习等核心算法，具备深厚的理论基础和实践经验。',
       },
       {
-        title: '性能优化',
-        description: '擅长前端性能优化、代码分割、懒加载等技术，提升用户体验。',
+        title: '经典编程',
+        description: '精通Pascal、Fortran等经典编程语言，在科学计算和数值分析方面具有独特优势。',
       },
       {
-        title: '团队协作',
-        description: '具备良好的沟通能力和团队协作精神，能够高效推进项目进展。',
+        title: '工程实现',
+        description: '擅长将算法理论转化为高效的程序实现，注重代码质量和性能优化。',
       },
       {
-        title: '持续学习',
-        description: '保持对新技术的敏感度，持续学习并应用到实际项目中。',
+        title: '学术写作',
+        description: '熟练使用LaTeX进行学术写作，能够将研究成果以专业的方式呈现。',
+      },
+      {
+        title: '跨领域应用',
+        description: '能够将算法技术应用到不同领域，解决复杂的技术问题。',
+      },
+      {
+        title: '持续创新',
+        description: '保持对前沿算法的关注，持续学习和探索新的技术方向。',
       },
     ],
   },
@@ -147,9 +189,9 @@ export const siteConfig = {
   
   // SEO配置
   seo: {
-    title: 'geometryzf - 前端开发者',
-    description: '个人技术博客和项目展示，专注于React、TypeScript、Next.js等前端技术',
-    keywords: ['前端开发', 'React', 'TypeScript', 'Next.js', '全栈开发'],
+    title: 'geometryzf - 算法工程师',
+    description: '算法工程师个人主页，专注于动态规划、MPC、PSO、强化学习等算法研究与优化',
+    keywords: ['算法工程师', '动态规划', 'MPC', 'PSO', '强化学习', '机器学习', '深度学习', 'Pascal', 'Fortran', 'LaTeX', '科学计算'],
     url: 'https://geometryzf.github.io',
     image: 'https://geometryzf.github.io/og-image.jpg',
   },

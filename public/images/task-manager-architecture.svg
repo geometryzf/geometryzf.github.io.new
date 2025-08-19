@@ -1,0 +1,117 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="grad1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:0.8" />
+    </radialGradient>
+    <radialGradient id="grad2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#f093fb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f5576c;stop-opacity:0.8" />
+    </radialGradient>
+    <radialGradient id="grad3" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#4facfe;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00f2fe;stop-opacity:0.8" />
+    </radialGradient>
+    <radialGradient id="grad4" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#43e97b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#38f9d7;stop-opacity:0.8" />
+    </radialGradient>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#f8fafc"/>
+  
+  <!-- 标题 -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#1e293b">任务管理应用架构图</text>
+  
+  <!-- 中心节点 - 任务管理应用 -->
+  <circle cx="400" cy="300" r="60" fill="url(#grad1)"/>
+  <text x="400" y="305" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">任务管理应用</text>
+  <text x="400" y="320" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">Next.js 14</text>
+  
+  <!-- 前端层 -->
+  <circle cx="200" cy="150" r="40" fill="url(#grad2)"/>
+  <text x="200" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">前端界面</text>
+  <text x="200" y="170" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">React + TS</text>
+  <text x="200" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">Framer Motion</text>
+  
+  <!-- 后端层 -->
+  <circle cx="600" cy="150" r="40" fill="url(#grad3)"/>
+  <text x="600" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">后端服务</text>
+  <text x="600" y="170" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">API Routes</text>
+  <text x="600" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">Prisma ORM</text>
+  
+  <!-- 数据库层 -->
+  <circle cx="150" cy="450" r="40" fill="url(#grad4)"/>
+  <text x="150" y="455" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">数据库</text>
+  <text x="150" y="470" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">PostgreSQL</text>
+  <text x="150" y="480" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">数据持久化</text>
+  
+  <!-- 部署层 -->
+  <circle cx="650" cy="450" r="40" fill="#f59e0b"/>
+  <text x="650" y="455" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">部署平台</text>
+  <text x="650" y="470" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">Vercel</text>
+  <text x="650" y="480" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">云服务</text>
+  
+  <!-- 连接线 -->
+  <line x1="280" y1="190" x2="340" y2="240" stroke="#94a3b8" stroke-width="2"/>
+  <line x1="520" y1="190" x2="460" y2="240" stroke="#94a3b8" stroke-width="2"/>
+  <line x1="280" y1="410" x2="340" y2="360" stroke="#94a3b8" stroke-width="2"/>
+  <line x1="520" y1="410" x2="460" y2="360" stroke="#94a3b8" stroke-width="2"/>
+  
+  <!-- 技术栈 -->
+  <rect x="50" y="50" width="700" height="500" rx="15" fill="none" stroke="#e2e8f0" stroke-width="2" stroke-dasharray="5,5"/>
+  
+  <!-- 技术栈 -->
+  <rect x="50" y="520" width="700" height="60" rx="10" fill="#f1f5f9" stroke="#e2e8f0" stroke-width="2"/>
+  <text x="400" y="540" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#334155">技术栈与工具</text>
+  
+  <!-- 技术图标 -->
+  <circle cx="120" cy="560" r="15" fill="#000000"/>
+  <text x="120" y="565" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">N</text>
+  
+  <circle cx="180" cy="560" r="15" fill="#3178c6"/>
+  <text x="180" y="565" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">TS</text>
+  
+  <circle cx="240" cy="560" r="15" fill="#61dafb"/>
+  <text x="240" y="565" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">R</text>
+  
+  <circle cx="300" cy="560" r="15" fill="#2d3748"/>
+  <text x="300" y="565" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">P</text>
+  
+  <circle cx="360" cy="560" r="15" fill="#336791"/>
+  <text x="360" y="565" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">PG</text>
+  
+  <circle cx="420" cy="560" r="15" fill="#000000"/>
+  <text x="420" y="565" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">V</text>
+  
+  <circle cx="480" cy="560" r="15" fill="#06b6d4"/>
+  <text x="480" y="565" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">T</text>
+  
+  <circle cx="540" cy="560" r="15" fill="#f05032"/>
+  <text x="540" y="565" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">G</text>
+  
+  <circle cx="600" cy="560" r="15" fill="#2496ed"/>
+  <text x="600" y="565" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">D</text>
+  
+  <circle cx="660" cy="560" r="15" fill="#f24e1e"/>
+  <text x="660" y="565" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">F</text>
+  
+  <!-- 技术标签 -->
+  <text x="120" y="585" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#64748b">Next.js</text>
+  <text x="180" y="585" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#64748b">TypeScript</text>
+  <text x="240" y="585" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#64748b">React</text>
+  <text x="300" y="585" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#64748b">Prisma</text>
+  <text x="360" y="585" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#64748b">PostgreSQL</text>
+  <text x="420" y="585" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#64748b">Vercel</text>
+  <text x="480" y="585" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#64748b">Tailwind</text>
+  <text x="540" y="585" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#64748b">Git</text>
+  <text x="600" y="585" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#64748b">Docker</text>
+  <text x="660" y="585" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#64748b">Figma</text>
+  
+  <!-- 架构层次标签 -->
+  <text x="200" y="130" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#475569">前端层</text>
+  <text x="600" y="130" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#475569">后端层</text>
+  <text x="150" y="430" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#475569">数据层</text>
+  <text x="650" y="430" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#475569">部署层</text>
+</svg>

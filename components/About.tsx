@@ -53,23 +53,6 @@ export default function About() {
             </motion.div>
           ))}
         </div>
-
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-          viewport={{ once: true }}
-          className="mt-16 text-center"
-        >
-          <div className="bg-white dark:bg-dark-700 rounded-2xl p-8 shadow-lg">
-            <h3 className="text-2xl font-bold mb-4 text-gray-900 dark:text-gray-100">
-              我的故事
-            </h3>
-            <p className="text-gray-600 dark:text-gray-400 leading-relaxed max-w-4xl mx-auto">
-              {siteConfig.about.story}
-            </p>
-          </div>
-        </motion.div>
       </div>
     </section>
   )

@@ -1,0 +1,105 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f093fb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f5576c;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4facfe;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00f2fe;stop-opacity:1" />
+    </linearGradient>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#94a3b8"/>
+    </marker>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#f8fafc"/>
+  
+  <!-- 标题 -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#1e293b">任务管理应用技术路线图</text>
+  
+  <!-- 时间轴 -->
+  <line x1="100" y1="120" x2="700" y2="120" stroke="#cbd5e1" stroke-width="3"/>
+  
+  <!-- 阶段标记 -->
+  <circle cx="200" cy="120" r="8" fill="url(#grad1)"/>
+  <text x="200" y="150" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#475569">设计阶段</text>
+  
+  <circle cx="400" cy="120" r="8" fill="url(#grad2)"/>
+  <text x="400" y="150" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#475569">开发阶段</text>
+  
+  <circle cx="600" cy="120" r="8" fill="url(#grad3)"/>
+  <text x="600" y="150" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#475569">部署阶段</text>
+  
+  <!-- 技术栈 -->
+  <!-- 前端技术 -->
+  <rect x="80" y="200" width="140" height="80" rx="10" fill="url(#grad1)" opacity="0.9"/>
+  <text x="150" y="230" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">前端技术</text>
+  <text x="150" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">• Next.js 14</text>
+  <text x="150" y="265" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">• TypeScript</text>
+  <text x="150" y="280" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">• Framer Motion</text>
+  
+  <!-- 后端技术 -->
+  <rect x="330" y="200" width="140" height="80" rx="10" fill="url(#grad2)" opacity="0.9"/>
+  <text x="400" y="230" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">后端技术</text>
+  <text x="400" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">• Prisma ORM</text>
+  <text x="400" y="265" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">• PostgreSQL</text>
+  <text x="400" y="280" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">• API Routes</text>
+  
+  <!-- 部署技术 -->
+  <rect x="580" y="200" width="140" height="80" rx="10" fill="url(#grad3)" opacity="0.9"/>
+  <text x="650" y="230" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">部署技术</text>
+  <text x="650" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">• Vercel</text>
+  <text x="650" y="265" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">• CI/CD</text>
+  <text x="650" y="280" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">• 监控</text>
+  
+  <!-- 连接线 -->
+  <path d="M 220 240 L 330 240" stroke="#94a3b8" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 470 240 L 580 240" stroke="#94a3b8" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- 功能特性 -->
+  <rect x="80" y="350" width="640" height="120" rx="10" fill="#f1f5f9" stroke="#e2e8f0" stroke-width="2"/>
+  <text x="400" y="375" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#334155">核心功能特性</text>
+  
+  <!-- 功能图标 -->
+  <circle cx="150" cy="410" r="20" fill="#3b82f6"/>
+  <text x="150" y="415" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">📋</text>
+  
+  <circle cx="250" cy="410" r="20" fill="#10b981"/>
+  <text x="250" y="415" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">🔄</text>
+  
+  <circle cx="350" cy="410" r="20" fill="#f59e0b"/>
+  <text x="350" y="415" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">👥</text>
+  
+  <circle cx="450" cy="410" r="20" fill="#ef4444"/>
+  <text x="450" y="415" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">📊</text>
+  
+  <circle cx="550" cy="410" r="20" fill="#8b5cf6"/>
+  <text x="550" y="415" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">🔔</text>
+  
+  <circle cx="650" cy="410" r="20" fill="#06b6d4"/>
+  <text x="650" y="415" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">📱</text>
+  
+  <!-- 功能标签 -->
+  <text x="150" y="445" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">任务管理</text>
+  <text x="250" y="445" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">拖拽排序</text>
+  <text x="350" y="445" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">实时协作</text>
+  <text x="450" y="445" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">数据可视化</text>
+  <text x="550" y="445" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">通知提醒</text>
+  <text x="650" y="445" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">响应式设计</text>
+  
+  <!-- 性能指标 -->
+  <rect x="80" y="500" width="640" height="60" rx="10" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="400" y="520" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#92400e">性能指标</text>
+  
+  <!-- 指标 -->
+  <text x="150" y="545" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#d97706">⚡ 加载时间 < 2s</text>
+  <text x="300" y="545" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#d97706">📱 移动端适配</text>
+  <text x="450" y="545" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#d97706">🔒 数据安全</text>
+  <text x="600" y="545" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#d97706">🔄 实时同步</text>
+</svg>

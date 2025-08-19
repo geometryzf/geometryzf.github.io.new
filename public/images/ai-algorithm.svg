@@ -1,0 +1,119 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f093fb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f5576c;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4facfe;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00f2fe;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="grad4" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#43e97b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#38f9d7;stop-opacity:1" />
+    </linearGradient>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#94a3b8"/>
+    </marker>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#f8fafc"/>
+  
+  <!-- 标题 -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#1e293b">AI算法技术栈</text>
+  
+  <!-- 核心算法区域 -->
+  <rect x="50" y="80" width="700" height="120" rx="15" fill="url(#grad1)" opacity="0.9"/>
+  <text x="400" y="110" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white">核心算法技术</text>
+  
+  <!-- 算法图标 -->
+  <circle cx="150" cy="150" r="25" fill="white" opacity="0.2"/>
+  <text x="150" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">DP</text>
+  <text x="150" y="175" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">动态规划</text>
+  
+  <circle cx="250" cy="150" r="25" fill="white" opacity="0.2"/>
+  <text x="250" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">MPC</text>
+  <text x="250" y="175" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">模型预测控制</text>
+  
+  <circle cx="350" cy="150" r="25" fill="white" opacity="0.2"/>
+  <text x="350" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">PSO</text>
+  <text x="350" y="175" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">粒子群优化</text>
+  
+  <circle cx="450" cy="150" r="25" fill="white" opacity="0.2"/>
+  <text x="450" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">RL</text>
+  <text x="450" y="175" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">强化学习</text>
+  
+  <circle cx="550" cy="150" r="25" fill="white" opacity="0.2"/>
+  <text x="550" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">ML</text>
+  <text x="550" y="175" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">机器学习</text>
+  
+  <circle cx="650" cy="150" r="25" fill="white" opacity="0.2"/>
+  <text x="650" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">DL</text>
+  <text x="650" y="175" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">深度学习</text>
+  
+  <!-- 技术栈区域 -->
+  <rect x="50" y="230" width="340" height="150" rx="15" fill="url(#grad2)" opacity="0.9"/>
+  <text x="220" y="260" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">开发技术栈</text>
+  
+  <!-- 前端技术 -->
+  <rect x="70" y="280" width="140" height="80" rx="8" fill="white" opacity="0.2"/>
+  <text x="140" y="300" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">前端技术</text>
+  <text x="140" y="320" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">• React/Vue</text>
+  <text x="140" y="335" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">• TypeScript</text>
+  <text x="140" y="350" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">• D3.js/Chart.js</text>
+  
+  <!-- 后端技术 -->
+  <rect x="230" y="280" width="140" height="80" rx="8" fill="white" opacity="0.2"/>
+  <text x="300" y="300" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">后端技术</text>
+  <text x="300" y="320" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">• Python</text>
+  <text x="300" y="335" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">• TensorFlow/PyTorch</text>
+  <text x="300" y="350" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">• FastAPI/Flask</text>
+  
+  <!-- 应用领域 -->
+  <rect x="410" y="230" width="340" height="150" rx="15" fill="url(#grad3)" opacity="0.9"/>
+  <text x="580" y="260" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">应用领域</text>
+  
+  <!-- 领域图标 -->
+  <circle cx="470" cy="300" r="20" fill="white" opacity="0.2"/>
+  <text x="470" y="305" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">🏭</text>
+  <text x="470" y="325" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">工业控制</text>
+  
+  <circle cx="530" cy="300" r="20" fill="white" opacity="0.2"/>
+  <text x="530" y="305" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">📊</text>
+  <text x="530" y="325" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">数据分析</text>
+  
+  <circle cx="590" cy="300" r="20" fill="white" opacity="0.2"/>
+  <text x="590" y="305" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">🤖</text>
+  <text x="590" y="325" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">智能决策</text>
+  
+  <circle cx="650" cy="300" r="20" fill="white" opacity="0.2"/>
+  <text x="650" y="305" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">🔬</text>
+  <text x="650" y="325" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">科研优化</text>
+  
+  <!-- 性能指标 -->
+  <rect x="50" y="410" width="700" height="80" rx="15" fill="url(#grad4)" opacity="0.9"/>
+  <text x="400" y="440" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">性能指标</text>
+  
+  <!-- 指标 -->
+  <text x="150" y="465" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">⚡ 算法效率提升 40%</text>
+  <text x="300" y="465" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">🎯 预测精度 95%+</text>
+  <text x="450" y="465" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">🔄 实时响应 < 100ms</text>
+  <text x="600" y="465" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">📈 可扩展性 10x</text>
+  
+  <!-- 连接线 -->
+  <path d="M 400 200 L 400 230" stroke="white" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 220 380 L 220 410" stroke="white" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 580 380 L 580 410" stroke="white" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- 装饰元素 -->
+  <circle cx="100" cy="100" r="3" fill="#94a3b8" opacity="0.6"/>
+  <circle cx="700" cy="120" r="2" fill="#94a3b8" opacity="0.6"/>
+  <circle cx="750" cy="180" r="2" fill="#94a3b8" opacity="0.6"/>
+  <circle cx="50" cy="300" r="2" fill="#94a3b8" opacity="0.6"/>
+  <circle cx="750" cy="400" r="3" fill="#94a3b8" opacity="0.6"/>
+</svg>

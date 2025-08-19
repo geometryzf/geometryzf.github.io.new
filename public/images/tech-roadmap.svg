@@ -1,0 +1,117 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f093fb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f5576c;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4facfe;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00f2fe;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#f8fafc"/>
+  
+  <!-- 标题 -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#1e293b">技术路线图</text>
+  
+  <!-- 时间轴 -->
+  <line x1="100" y1="120" x2="700" y2="120" stroke="#cbd5e1" stroke-width="3"/>
+  
+  <!-- 2023年 -->
+  <circle cx="150" cy="120" r="8" fill="url(#grad1)"/>
+  <text x="150" y="150" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#475569">2023</text>
+  
+  <!-- 2024年 -->
+  <circle cx="400" cy="120" r="8" fill="url(#grad2)"/>
+  <text x="400" y="150" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#475569">2024</text>
+  
+  <!-- 2025年 -->
+  <circle cx="650" cy="120" r="8" fill="url(#grad3)"/>
+  <text x="650" y="150" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#475569">2025</text>
+  
+  <!-- 技术发展路径 -->
+  <!-- 基础算法 -->
+  <rect x="80" y="200" width="140" height="80" rx="10" fill="url(#grad1)" opacity="0.9"/>
+  <text x="150" y="230" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">基础算法</text>
+  <text x="150" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">• 动态规划</text>
+  <text x="150" y="265" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">• 强化学习</text>
+  <text x="150" y="280" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">• 经典编程</text>
+  
+  <!-- 算法优化 -->
+  <rect x="330" y="200" width="140" height="80" rx="10" fill="url(#grad2)" opacity="0.9"/>
+  <text x="400" y="230" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">算法优化</text>
+  <text x="400" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">• MPC控制</text>
+  <text x="400" y="265" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">• PSO优化</text>
+  <text x="400" y="280" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">• 并行计算</text>
+  
+  <!-- 前沿技术 -->
+  <rect x="580" y="200" width="140" height="80" rx="10" fill="url(#grad3)" opacity="0.9"/>
+  <text x="650" y="230" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">前沿技术</text>
+  <text x="650" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">• 大语言模型</text>
+  <text x="650" y="265" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">• 联邦学习</text>
+  <text x="650" y="280" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">• 量子计算</text>
+  
+  <!-- 连接线 -->
+  <path d="M 220 240 L 330 240" stroke="#94a3b8" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 470 240 L 580 240" stroke="#94a3b8" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- 技能发展 -->
+  <!-- 初级 -->
+  <rect x="80" y="350" width="140" height="60" rx="8" fill="#e2e8f0" stroke="#cbd5e1" stroke-width="2"/>
+  <text x="150" y="375" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#475569">初级 (0-2年)</text>
+  <text x="150" y="395" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">基础算法实现</text>
+  
+  <!-- 中级 -->
+  <rect x="330" y="350" width="140" height="60" rx="8" fill="#dbeafe" stroke="#93c5fd" stroke-width="2"/>
+  <text x="400" y="375" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1e40af">中级 (2-5年)</text>
+  <text x="400" y="395" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#3b82f6">算法优化与工程化</text>
+  
+  <!-- 高级 -->
+  <rect x="580" y="350" width="140" height="60" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="650" y="375" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#92400e">高级 (5年+)</text>
+  <text x="650" y="395" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#d97706">前沿技术研究</text>
+  
+  <!-- 应用领域 -->
+  <rect x="80" y="450" width="640" height="100" rx="10" fill="#f1f5f9" stroke="#e2e8f0" stroke-width="2"/>
+  <text x="400" y="475" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#334155">应用领域</text>
+  
+  <!-- 应用领域图标 -->
+  <circle cx="150" cy="510" r="20" fill="#3b82f6"/>
+  <text x="150" y="515" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">AI</text>
+  
+  <circle cx="250" cy="510" r="20" fill="#10b981"/>
+  <text x="250" y="515" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">ML</text>
+  
+  <circle cx="350" cy="510" r="20" fill="#f59e0b"/>
+  <text x="350" y="515" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">RL</text>
+  
+  <circle cx="450" cy="510" r="20" fill="#ef4444"/>
+  <text x="450" y="515" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">CV</text>
+  
+  <circle cx="550" cy="510" r="20" fill="#8b5cf6"/>
+  <text x="550" y="515" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">NLP</text>
+  
+  <circle cx="650" cy="510" r="20" fill="#06b6d4"/>
+  <text x="650" y="515" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">QC</text>
+  
+  <!-- 标签 -->
+  <text x="150" y="545" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">人工智能</text>
+  <text x="250" y="545" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">机器学习</text>
+  <text x="350" y="545" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">强化学习</text>
+  <text x="450" y="545" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">计算机视觉</text>
+  <text x="550" y="545" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">自然语言处理</text>
+  <text x="650" y="545" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">量子计算</text>
+  
+  <!-- 箭头标记 -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#94a3b8"/>
+    </marker>
+  </defs>
+</svg>

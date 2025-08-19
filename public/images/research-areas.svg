@@ -1,0 +1,118 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="grad1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:0.8" />
+    </radialGradient>
+    <radialGradient id="grad2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#f093fb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f5576c;stop-opacity:0.8" />
+    </radialGradient>
+    <radialGradient id="grad3" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#4facfe;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00f2fe;stop-opacity:0.8" />
+    </radialGradient>
+    <radialGradient id="grad4" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#43e97b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#38f9d7;stop-opacity:0.8" />
+    </radialGradient>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#f8fafc"/>
+  
+  <!-- 标题 -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#1e293b">研究领域与专长</text>
+  
+  <!-- 中心节点 - 算法工程师 -->
+  <circle cx="400" cy="300" r="60" fill="url(#grad1)"/>
+  <text x="400" y="305" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">算法工程师</text>
+  <text x="400" y="320" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">郑斐</text>
+  
+  <!-- 核心研究领域 -->
+  <!-- 动态规划 -->
+  <circle cx="200" cy="150" r="40" fill="url(#grad2)"/>
+  <text x="200" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">动态规划</text>
+  <text x="200" y="170" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">路径规划</text>
+  <text x="200" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">最优控制</text>
+  
+  <!-- 强化学习 -->
+  <circle cx="600" cy="150" r="40" fill="url(#grad3)"/>
+  <text x="600" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">强化学习</text>
+  <text x="600" y="170" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">Q-Learning</text>
+  <text x="600" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">策略优化</text>
+  
+  <!-- MPC控制 -->
+  <circle cx="150" cy="450" r="40" fill="url(#grad4)"/>
+  <text x="150" y="455" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">MPC控制</text>
+  <text x="150" y="470" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">预测控制</text>
+  <text x="150" y="480" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">系统优化</text>
+  
+  <!-- PSO优化 -->
+  <circle cx="650" cy="450" r="40" fill="#f59e0b"/>
+  <text x="650" y="455" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">PSO优化</text>
+  <text x="650" y="470" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">群体智能</text>
+  <text x="650" y="480" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">多目标优化</text>
+  
+  <!-- 连接线 -->
+  <line x1="280" y1="190" x2="340" y2="240" stroke="#94a3b8" stroke-width="2"/>
+  <line x1="520" y1="190" x2="460" y2="240" stroke="#94a3b8" stroke-width="2"/>
+  <line x1="280" y1="410" x2="340" y2="360" stroke="#94a3b8" stroke-width="2"/>
+  <line x1="520" y1="410" x2="460" y2="360" stroke="#94a3b8" stroke-width="2"/>
+  
+  <!-- 技术栈 -->
+  <rect x="50" y="50" width="700" height="500" rx="15" fill="none" stroke="#e2e8f0" stroke-width="2" stroke-dasharray="5,5"/>
+  
+  <!-- 编程语言 -->
+  <rect x="50" y="520" width="700" height="60" rx="10" fill="#f1f5f9" stroke="#e2e8f0" stroke-width="2"/>
+  <text x="400" y="540" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#334155">编程语言与技术栈</text>
+  
+  <!-- 语言图标 -->
+  <circle cx="120" cy="560" r="15" fill="#3776ab"/>
+  <text x="120" y="565" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">Py</text>
+  
+  <circle cx="180" cy="560" r="15" fill="#f7df1e"/>
+  <text x="180" y="565" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="black">JS</text>
+  
+  <circle cx="240" cy="560" r="15" fill="#3178c6"/>
+  <text x="240" y="565" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">TS</text>
+  
+  <circle cx="300" cy="560" r="15" fill="#00599c"/>
+  <text x="300" y="565" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">C++</text>
+  
+  <circle cx="360" cy="560" r="15" fill="#1976d2"/>
+  <text x="360" y="565" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">Pa</text>
+  
+  <circle cx="420" cy="560" r="15" fill="#734f96"/>
+  <text x="420" y="565" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">Fo</text>
+  
+  <circle cx="480" cy="560" r="15" fill="#008080"/>
+  <text x="480" y="565" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">La</text>
+  
+  <circle cx="540" cy="560" r="15" fill="#ee4c2c"/>
+  <text x="540" y="565" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">PT</text>
+  
+  <circle cx="600" cy="560" r="15" fill="#ff6f00"/>
+  <text x="600" y="565" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">TF</text>
+  
+  <circle cx="660" cy="560" r="15" fill="#4dabcf"/>
+  <text x="660" y="565" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">NP</text>
+  
+  <!-- 语言标签 -->
+  <text x="120" y="585" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#64748b">Python</text>
+  <text x="180" y="585" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#64748b">JavaScript</text>
+  <text x="240" y="585" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#64748b">TypeScript</text>
+  <text x="300" y="585" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#64748b">C++</text>
+  <text x="360" y="585" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#64748b">Pascal</text>
+  <text x="420" y="585" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#64748b">Fortran</text>
+  <text x="480" y="585" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#64748b">LaTeX</text>
+  <text x="540" y="585" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#64748b">PyTorch</text>
+  <text x="600" y="585" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#64748b">TensorFlow</text>
+  <text x="660" y="585" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#64748b">NumPy</text>
+  
+  <!-- 研究方向标签 -->
+  <text x="200" y="130" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#475569">核心算法</text>
+  <text x="600" y="130" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#475569">智能学习</text>
+  <text x="150" y="430" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#475569">控制理论</text>
+  <text x="650" y="430" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#475569">优化算法</text>
+</svg>

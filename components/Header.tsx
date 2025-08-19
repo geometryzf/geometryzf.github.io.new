@@ -13,6 +13,7 @@ const navItems = [
   { name: '简历', href: '/resume' },
   { name: '博客', href: '/blog' },
   { name: '联系', href: '#contact' },
+  { name: '管理', href: '/admin' },
 ]
 
 export default function Header() {
