@@ -34,3 +34,11 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# project subdirectories (exclude from main build)
+/projects/*/node_modules/
+/projects/*/src/
+/projects/*/package.json
+/projects/*/package-lock.json
+/projects/*/yarn.lock
+/projects/*/tsconfig.json

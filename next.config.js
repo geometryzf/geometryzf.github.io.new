@@ -1,22 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
+  // 移除静态导出配置，支持Vercel动态部署
   images: {
     domains: ['avatars.githubusercontent.com', 'github-readme-stats.vercel.app'],
     unoptimized: true,
   },
-  async headers() {
-    return [
-      {
-        source: '/(.*)',
-        headers: [
-          { key: 'X-Frame-Options', value: 'DENY' },
-          { key: 'X-Content-Type-Options', value: 'nosniff' },
-          { key: 'Referrer-Policy', value: 'origin-when-cross-origin' },
-        ],
-      },
-    ]
-  },
+  // 确保所有页面都能正确导出
 }
 
 module.exports = nextConfig

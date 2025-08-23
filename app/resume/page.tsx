@@ -1,5 +1,6 @@
 import ResumeDownload from '@/components/ResumeDownload'
 import { siteConfig } from '@/config/site'
+import { Lock } from 'lucide-react'
 
 export default function ResumePage() {
   return (
