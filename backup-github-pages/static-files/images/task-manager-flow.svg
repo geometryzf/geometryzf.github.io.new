@@ -1,0 +1,139 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f093fb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f5576c;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4facfe;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00f2fe;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="grad4" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#43e97b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#38f9d7;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#f8fafc"/>
+  
+  <!-- 标题 -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#1e293b">任务管理应用工作流程</text>
+  
+  <!-- 开始 -->
+  <rect x="350" y="80" width="100" height="40" rx="20" fill="url(#grad1)"/>
+  <text x="400" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">用户登录</text>
+  
+  <!-- 任务创建 -->
+  <rect x="300" y="160" width="200" height="50" rx="10" fill="url(#grad2)"/>
+  <text x="400" y="185" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">创建/编辑任务</text>
+  <text x="400" y="200" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">设置标题、描述、优先级</text>
+  
+  <!-- 任务分配 -->
+  <rect x="300" y="250" width="200" height="50" rx="10" fill="url(#grad3)"/>
+  <text x="400" y="275" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">任务分配与协作</text>
+  <text x="400" y="290" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">分配给团队成员</text>
+  
+  <!-- 任务执行 -->
+  <rect x="300" y="340" width="200" height="50" rx="10" fill="url(#grad4)"/>
+  <text x="400" y="365" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">任务执行与跟踪</text>
+  <text x="400" y="380" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">更新进度状态</text>
+  
+  <!-- 任务完成 -->
+  <rect x="300" y="430" width="200" height="50" rx="10" fill="#f59e0b"/>
+  <text x="400" y="455" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">任务完成与验收</text>
+  <text x="400" y="470" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">质量检查与确认</text>
+  
+  <!-- 数据分析 -->
+  <rect x="300" y="520" width="200" height="50" rx="10" fill="#10b981"/>
+  <text x="400" y="545" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">数据分析与报告</text>
+  <text x="400" y="560" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">生成统计报告</text>
+  
+  <!-- 连接箭头 -->
+  <path d="M 400 120 L 400 160" stroke="#94a3b8" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 400 210 L 400 250" stroke="#94a3b8" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 400 300 L 400 340" stroke="#94a3b8" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 400 390 L 400 430" stroke="#94a3b8" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 400 480 L 400 520" stroke="#94a3b8" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- 侧边功能 -->
+  <!-- 拖拽排序 -->
+  <rect x="50" y="150" width="180" height="60" rx="8" fill="#e2e8f0" stroke="#cbd5e1" stroke-width="2"/>
+  <text x="140" y="170" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#475569">拖拽排序</text>
+  <text x="140" y="185" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#64748b">• 任务优先级调整</text>
+  <text x="140" y="195" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#64748b">• 看板视图管理</text>
+  <text x="140" y="205" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#64748b">• 实时同步</text>
+  
+  <!-- 实时协作 -->
+  <rect x="570" y="150" width="180" height="60" rx="8" fill="#dbeafe" stroke="#93c5fd" stroke-width="2"/>
+  <text x="660" y="170" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#1e40af">实时协作</text>
+  <text x="660" y="185" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#3b82f6">• 多人同时编辑</text>
+  <text x="660" y="195" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#3b82f6">• 实时状态更新</text>
+  <text x="660" y="205" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#3b82f6">• 冲突解决</text>
+  
+  <!-- 通知系统 -->
+  <rect x="50" y="250" width="180" height="60" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="140" y="270" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#92400e">通知系统</text>
+  <text x="140" y="285" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#d97706">• 任务分配通知</text>
+  <text x="140" y="295" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#d97706">• 截止日期提醒</text>
+  <text x="140" y="305" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#d97706">• 状态变更通知</text>
+  
+  <!-- 数据可视化 -->
+  <rect x="570" y="250" width="180" height="60" rx="8" fill="#fce7f3" stroke="#ec4899" stroke-width="2"/>
+  <text x="660" y="270" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#be185d">数据可视化</text>
+  <text x="660" y="285" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#ec4899">• 进度图表</text>
+  <text x="660" y="295" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#ec4899">• 团队效率分析</text>
+  <text x="660" y="305" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#ec4899">• 时间统计</text>
+  
+  <!-- 连接线到侧边 -->
+  <path d="M 230 180 L 50 180" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3,3"/>
+  <path d="M 570 180 L 750 180" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3,3"/>
+  <path d="M 230 280 L 50 280" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3,3"/>
+  <path d="M 570 280 L 750 280" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3,3"/>
+  
+  <!-- 性能指标 -->
+  <rect x="50" y="350" width="700" height="80" rx="10" fill="#f1f5f9" stroke="#e2e8f0" stroke-width="2"/>
+  <text x="400" y="370" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#334155">系统性能指标</text>
+  
+  <!-- 指标图标 -->
+  <circle cx="120" cy="400" r="15" fill="#3b82f6"/>
+  <text x="120" y="405" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">⚡</text>
+  
+  <circle cx="220" cy="400" r="15" fill="#10b981"/>
+  <text x="220" y="405" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">📊</text>
+  
+  <circle cx="320" cy="400" r="15" fill="#f59e0b"/>
+  <text x="320" y="405" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">👥</text>
+  
+  <circle cx="420" cy="400" r="15" fill="#ef4444"/>
+  <text x="420" y="405" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">🔒</text>
+  
+  <circle cx="520" cy="400" r="15" fill="#8b5cf6"/>
+  <text x="520" y="405" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">📱</text>
+  
+  <circle cx="620" cy="400" r="15" fill="#06b6d4"/>
+  <text x="620" y="405" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">🔄</text>
+  
+  <circle cx="720" cy="400" r="15" fill="#84cc16"/>
+  <text x="720" y="405" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">✅</text>
+  
+  <!-- 指标标签 -->
+  <text x="120" y="425" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#64748b">响应时间</text>
+  <text x="220" y="425" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#64748b">并发用户</text>
+  <text x="320" y="425" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#64748b">团队协作</text>
+  <text x="420" y="425" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#64748b">数据安全</text>
+  <text x="520" y="425" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#64748b">移动适配</text>
+  <text x="620" y="425" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#64748b">实时同步</text>
+  <text x="720" y="425" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#64748b">系统稳定</text>
+  
+  <!-- 箭头标记 -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#94a3b8"/>
+    </marker>
+  </defs>
+</svg>

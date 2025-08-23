@@ -1,0 +1,132 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f093fb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f5576c;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4facfe;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00f2fe;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="grad4" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#43e97b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#38f9d7;stop-opacity:1" />
+    </linearGradient>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#94a3b8"/>
+    </marker>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#f8fafc"/>
+  
+  <!-- 标题 -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#1e293b">Web开发技术栈</text>
+  
+  <!-- 前端技术区域 -->
+  <rect x="50" y="80" width="340" height="200" rx="15" fill="url(#grad1)" opacity="0.9"/>
+  <text x="220" y="110" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white">前端技术</text>
+  
+  <!-- React -->
+  <rect x="70" y="130" width="100" height="60" rx="8" fill="white" opacity="0.2"/>
+  <text x="120" y="150" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">React</text>
+  <text x="120" y="165" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">• Hooks</text>
+  <text x="120" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">• Context</text>
+  
+  <!-- Next.js -->
+  <rect x="190" y="130" width="100" height="60" rx="8" fill="white" opacity="0.2"/>
+  <text x="240" y="150" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">Next.js</text>
+  <text x="240" y="165" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">• App Router</text>
+  <text x="240" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">• SSR/SSG</text>
+  
+  <!-- TypeScript -->
+  <rect x="70" y="210" width="100" height="50" rx="8" fill="white" opacity="0.2"/>
+  <text x="120" y="230" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">TypeScript</text>
+  <text x="120" y="245" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">• 类型安全</text>
+  
+  <!-- Tailwind CSS -->
+  <rect x="190" y="210" width="100" height="50" rx="8" fill="white" opacity="0.2"/>
+  <text x="240" y="230" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">Tailwind CSS</text>
+  <text x="240" y="245" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">• 原子化CSS</text>
+  
+  <!-- 后端技术区域 -->
+  <rect x="410" y="80" width="340" height="200" rx="15" fill="url(#grad2)" opacity="0.9"/>
+  <text x="580" y="110" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white">后端技术</text>
+  
+  <!-- Node.js -->
+  <rect x="430" y="130" width="100" height="60" rx="8" fill="white" opacity="0.2"/>
+  <text x="480" y="150" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">Node.js</text>
+  <text x="480" y="165" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">• Express</text>
+  <text x="480" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">• Fastify</text>
+  
+  <!-- 数据库 -->
+  <rect x="550" y="130" width="100" height="60" rx="8" fill="white" opacity="0.2"/>
+  <text x="600" y="150" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">数据库</text>
+  <text x="600" y="165" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">• PostgreSQL</text>
+  <text x="600" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">• MongoDB</text>
+  
+  <!-- ORM -->
+  <rect x="430" y="210" width="100" height="50" rx="8" fill="white" opacity="0.2"/>
+  <text x="480" y="230" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">Prisma</text>
+  <text x="480" y="245" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">• 类型安全ORM</text>
+  
+  <!-- 认证 -->
+  <rect x="550" y="210" width="100" height="50" rx="8" fill="white" opacity="0.2"/>
+  <text x="600" y="230" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">NextAuth.js</text>
+  <text x="600" y="245" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">• 身份认证</text>
+  
+  <!-- 部署和工具区域 -->
+  <rect x="50" y="310" width="700" height="120" rx="15" fill="url(#grad3)" opacity="0.9"/>
+  <text x="400" y="340" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white">部署和工具</text>
+  
+  <!-- Vercel -->
+  <rect x="80" y="360" width="100" height="50" rx="8" fill="white" opacity="0.2"/>
+  <text x="130" y="380" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">Vercel</text>
+  <text x="130" y="395" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">• 自动部署</text>
+  
+  <!-- Docker -->
+  <rect x="200" y="360" width="100" height="50" rx="8" fill="white" opacity="0.2"/>
+  <text x="250" y="380" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">Docker</text>
+  <text x="250" y="395" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">• 容器化</text>
+  
+  <!-- Git -->
+  <rect x="320" y="360" width="100" height="50" rx="8" fill="white" opacity="0.2"/>
+  <text x="370" y="380" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">Git</text>
+  <text x="370" y="395" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">• 版本控制</text>
+  
+  <!-- CI/CD -->
+  <rect x="440" y="360" width="100" height="50" rx="8" fill="white" opacity="0.2"/>
+  <text x="490" y="380" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">CI/CD</text>
+  <text x="490" y="395" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">• 自动化</text>
+  
+  <!-- 监控 -->
+  <rect x="560" y="360" width="100" height="50" rx="8" fill="white" opacity="0.2"/>
+  <text x="610" y="380" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">监控</text>
+  <text x="610" y="395" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">• 性能监控</text>
+  
+  <!-- 性能指标 -->
+  <rect x="50" y="460" width="700" height="80" rx="15" fill="url(#grad4)" opacity="0.9"/>
+  <text x="400" y="490" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">性能指标</text>
+  
+  <!-- 指标 -->
+  <text x="150" y="515" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">⚡ 首屏加载 < 2s</text>
+  <text x="300" y="515" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">📱 移动端适配</text>
+  <text x="450" y="515" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">🔒 安全防护</text>
+  <text x="600" y="515" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">🔄 高可用性</text>
+  
+  <!-- 连接线 -->
+  <path d="M 400 280 L 400 310" stroke="white" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 580 280 L 580 310" stroke="white" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 400 430 L 400 460" stroke="white" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- 装饰元素 -->
+  <circle cx="100" cy="100" r="3" fill="#94a3b8" opacity="0.6"/>
+  <circle cx="700" cy="120" r="2" fill="#94a3b8" opacity="0.6"/>
+  <circle cx="750" cy="180" r="2" fill="#94a3b8" opacity="0.6"/>
+  <circle cx="50" cy="300" r="2" fill="#94a3b8" opacity="0.6"/>
+  <circle cx="750" cy="400" r="3" fill="#94a3b8" opacity="0.6"/>
+</svg>
