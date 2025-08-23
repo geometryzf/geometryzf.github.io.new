@@ -1,0 +1,13 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": "out",
+  "installCommand": "npm install",
+  "nodeVersion": "18.x",
+  "framework": "nextjs",
+  "buildSettings": {
+    "env": {
+      "NODE_ENV": "production"
+    }
+  }
+}
+
