@@ -19,10 +19,14 @@ import AnimatedGradient from '@/components/AnimatedGradient'
 export default function Home() {
   const [isDark, setIsDark] = useState(false)
   const [showEffects, setShowEffects] = useState(true)
+  const [isStaticExport, setIsStaticExport] = useState(false)
 
   useEffect(() => {
     const theme = localStorage.getItem('theme')
     setIsDark(theme === 'dark')
+    
+    // 检测是否为静态导出环境
+    setIsStaticExport(process.env.STATIC_EXPORT === 'true')
   }, [])
 
   useEffect(() => {

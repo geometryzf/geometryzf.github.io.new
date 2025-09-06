@@ -1,0 +1,148 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fd79a8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e84393;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="url(#bgGradient)"/>
+  
+  <!-- 标题 -->
+  <text x="400" y="50" text-anchor="middle" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="white">
+    数据可视化面板
+  </text>
+  
+  <!-- 主要内容区域 -->
+  <rect x="50" y="80" width="700" height="480" rx="10" fill="white" filter="url(#shadow)"/>
+  
+  <!-- 顶部导航 -->
+  <rect x="50" y="80" width="700" height="50" rx="10" fill="#f8f9fa"/>
+  <text x="80" y="105" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#333">
+    数据分析仪表盘
+  </text>
+  
+  <!-- 时间选择器 -->
+  <rect x="500" y="90" width="120" height="30" rx="15" fill="white" stroke="#ddd" stroke-width="1"/>
+  <text x="560" y="110" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#333">最近7天</text>
+  
+  <!-- 刷新按钮 -->
+  <rect x="640" y="90" width="80" height="30" rx="15" fill="#fd79a8"/>
+  <text x="680" y="110" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">刷新</text>
+  
+  <!-- 统计卡片 -->
+  <rect x="70" y="150" width="150" height="80" rx="10" fill="linear-gradient(135deg, #fd79a8, #e84393)"/>
+  <text x="145" y="175" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">总用户数</text>
+  <text x="145" y="200" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="white">12,847</text>
+  <text x="145" y="215" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="rgba(255,255,255,0.8)">+12.5%</text>
+  
+  <rect x="240" y="150" width="150" height="80" rx="10" fill="linear-gradient(135deg, #74b9ff, #0984e3)"/>
+  <text x="315" y="175" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">活跃用户</text>
+  <text x="315" y="200" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="white">8,234</text>
+  <text x="315" y="215" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="rgba(255,255,255,0.8)">+8.3%</text>
+  
+  <rect x="410" y="150" width="150" height="80" rx="10" fill="linear-gradient(135deg, #00b894, #00a085)"/>
+  <text x="485" y="175" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">总收入</text>
+  <text x="485" y="200" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="white">¥45,678</text>
+  <text x="485" y="215" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="rgba(255,255,255,0.8)">+15.2%</text>
+  
+  <rect x="580" y="150" width="150" height="80" rx="10" fill="linear-gradient(135deg, #fdcb6e, #e17055)"/>
+  <text x="655" y="175" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">转化率</text>
+  <text x="655" y="200" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="white">3.2%</text>
+  <text x="655" y="215" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="rgba(255,255,255,0.8)">+2.1%</text>
+  
+  <!-- 图表区域 -->
+  <!-- 折线图 -->
+  <rect x="70" y="250" width="350" height="200" rx="10" fill="#f8f9fa" stroke="#e9ecef" stroke-width="1"/>
+  <text x="90" y="275" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#333">
+    用户增长趋势
+  </text>
+  
+  <!-- 折线图数据点 -->
+  <circle cx="100" cy="350" r="3" fill="#fd79a8"/>
+  <circle cx="150" cy="320" r="3" fill="#fd79a8"/>
+  <circle cx="200" cy="340" r="3" fill="#fd79a8"/>
+  <circle cx="250" cy="300" r="3" fill="#fd79a8"/>
+  <circle cx="300" cy="330" r="3" fill="#fd79a8"/>
+  <circle cx="350" cy="310" r="3" fill="#fd79a8"/>
+  <circle cx="400" cy="290" r="3" fill="#fd79a8"/>
+  
+  <!-- 连接线 -->
+  <polyline points="100,350 150,320 200,340 250,300 300,330 350,310 400,290" 
+            fill="none" stroke="#fd79a8" stroke-width="2"/>
+  
+  <!-- X轴标签 -->
+  <text x="100" y="380" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">周一</text>
+  <text x="150" y="380" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">周二</text>
+  <text x="200" y="380" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">周三</text>
+  <text x="250" y="380" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">周四</text>
+  <text x="300" y="380" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">周五</text>
+  <text x="350" y="380" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">周六</text>
+  <text x="400" y="380" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">周日</text>
+  
+  <!-- 饼图 -->
+  <rect x="450" y="250" width="300" height="200" rx="10" fill="#f8f9fa" stroke="#e9ecef" stroke-width="1"/>
+  <text x="470" y="275" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#333">
+    用户分布
+  </text>
+  
+  <!-- 饼图扇形 -->
+  <path d="M 600 350 A 60 60 0 0 1 660 350 L 600 350 Z" fill="#fd79a8"/>
+  <path d="M 600 350 A 60 60 0 0 1 540 320 L 600 350 Z" fill="#74b9ff"/>
+  <path d="M 600 350 A 60 60 0 0 1 570 410 L 600 350 Z" fill="#00b894"/>
+  <path d="M 600 350 A 60 60 0 0 1 630 380 L 600 350 Z" fill="#fdcb6e"/>
+  
+  <!-- 图例 -->
+  <rect x="470" y="300" width="10" height="10" fill="#fd79a8"/>
+  <text x="485" y="310" font-family="Arial, sans-serif" font-size="12" fill="#333">移动端 45%</text>
+  
+  <rect x="470" y="320" width="10" height="10" fill="#74b9ff"/>
+  <text x="485" y="330" font-family="Arial, sans-serif" font-size="12" fill="#333">桌面端 30%</text>
+  
+  <rect x="470" y="340" width="10" height="10" fill="#00b894"/>
+  <text x="485" y="350" font-family="Arial, sans-serif" font-size="12" fill="#333">平板端 15%</text>
+  
+  <rect x="470" y="360" width="10" height="10" fill="#fdcb6e"/>
+  <text x="485" y="370" font-family="Arial, sans-serif" font-size="12" fill="#333">其他 10%</text>
+  
+  <!-- 表格 -->
+  <rect x="70" y="470" width="680" height="80" rx="10" fill="#f8f9fa" stroke="#e9ecef" stroke-width="1"/>
+  <text x="90" y="495" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#333">
+    最近活动
+  </text>
+  
+  <!-- 表格头部 -->
+  <rect x="90" y="510" width="120" height="25" fill="#e9ecef"/>
+  <text x="150" y="525" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">用户</text>
+  
+  <rect x="220" y="510" width="120" height="25" fill="#e9ecef"/>
+  <text x="280" y="525" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">活动</text>
+  
+  <rect x="350" y="510" width="120" height="25" fill="#e9ecef"/>
+  <text x="410" y="525" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">时间</text>
+  
+  <rect x="480" y="510" width="120" height="25" fill="#e9ecef"/>
+  <text x="540" y="525" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">状态</text>
+  
+  <!-- 表格数据 -->
+  <text x="150" y="545" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#333">张三</text>
+  <text x="280" y="545" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#333">登录</text>
+  <text x="410" y="545" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#333">14:30</text>
+  <text x="540" y="545" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#00b894">成功</text>
+  
+  <text x="150" y="565" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#333">李四</text>
+  <text x="280" y="565" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#333">购买</text>
+  <text x="410" y="565" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#333">14:25</text>
+  <text x="540" y="565" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#00b894">成功</text>
+  
+  <!-- 功能按钮 -->
+  <circle cx="720" cy="110" r="15" fill="#fd79a8"/>
+  <text x="720" y="115" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">⚙️</text>
+  
+  <circle cx="750" cy="110" r="15" fill="#f8f9fa" stroke="#ddd" stroke-width="1"/>
+  <text x="750" y="115" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">📊</text>
+</svg>

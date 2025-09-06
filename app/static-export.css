@@ -1,0 +1,86 @@
+/* 静态导出专用CSS - 确保内容在没有JavaScript时也能正常显示 */
+
+/* 重置所有隐藏的动画元素 */
+[style*="opacity:0"] {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+/* 确保所有内容可见 */
+.hero-content,
+.about-content,
+.skills-content,
+.projects-content,
+.contact-content {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+/* 进度条动画 */
+.skill-progress {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+.skill-progress .progress-bar {
+  width: var(--progress-width) !important;
+  transition: width 2s ease-out;
+}
+
+/* 卡片动画 */
+.card {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+/* 导航栏 */
+.nav-item {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+/* 社交媒体图标 */
+.social-icon {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+/* 项目卡片 */
+.project-card {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+/* 技能图标 */
+.skill-icon {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+/* 轮播图 */
+.carousel-slide {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+/* 确保所有动画元素都可见 */
+* {
+  opacity: 1 !important;
+}
+
+/* 但保留一些必要的隐藏元素 */
+.hidden {
+  display: none !important;
+  opacity: 0 !important;
+}
+
+.sr-only {
+  opacity: 0 !important;
+}
+
+/* 移动端菜单等交互元素 */
+.mobile-menu.closed {
+  opacity: 0 !important;
+  display: none !important;
+}
+

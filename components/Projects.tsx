@@ -14,6 +14,10 @@ export default function Projects() {
     '模型预测控制系统': '/images/projects/mpc-system-screenshot.svg',
     '粒子群优化算法库': '/images/projects/pso-library-screenshot.svg',
     '任务管理应用': '/images/projects/task-manager-screenshot.svg',
+    '个人博客系统': '/images/blog-system-screenshot.svg',
+    '天气应用': '/images/weather-app-screenshot.svg',
+    '在线聊天室': '/images/chat-room-screenshot.svg',
+    '数据可视化面板': '/images/dashboard-screenshot.svg',
   }
 
   const getProjectImage = (title: string): string | null => {

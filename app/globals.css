@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+/* 静态导出专用样式 */
+@import './static-export.css';
+
 @layer base {
   html {
     scroll-behavior: smooth;

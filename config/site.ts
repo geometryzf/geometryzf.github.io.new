@@ -126,7 +126,7 @@ export const siteConfig = {
       demo: 'https://chat-room-demo.vercel.app',
       featured: false,
       date: '2023',
-      contributors: 2,
+      contributors: 1,
     },
     {
       title: '数据可视化面板',
@@ -136,7 +136,7 @@ export const siteConfig = {
       demo: 'https://dashboard-demo.vercel.app',
       featured: false,
       date: '2023',
-      contributors: 4,
+      contributors: 1,
     },
   ],
   
