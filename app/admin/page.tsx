@@ -2,6 +2,8 @@
 
 import { useState, useEffect, useRef } from 'react'
 import { Lock, Edit, Save, Eye, Sliders, MousePointer, Type } from 'lucide-react'
+import Header from '@/components/Header'
+import Footer from '@/components/Footer'
 import { siteConfig } from '@/config/site'
 
 // 技能进度条编辑组件
@@ -325,7 +327,8 @@ export default function AdminPage() {
 
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-dark-900">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <Header />
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 pt-32">
         <div className="bg-white dark:bg-dark-800 rounded-2xl shadow-lg p-8">
           <div className="flex items-center justify-between mb-8">
             <h1 className="text-2xl font-bold text-gray-900 dark:text-gray-100">
@@ -639,6 +642,7 @@ export default function AdminPage() {
           )}
         </div>
       </div>
+      <Footer />
     </div>
   )
 }

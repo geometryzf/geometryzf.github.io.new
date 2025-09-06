@@ -1,3 +1,5 @@
+import Header from '@/components/Header'
+import Footer from '@/components/Footer'
 import BlogCard from '@/components/BlogCard'
 
 const posts = [
@@ -23,7 +25,9 @@ const posts = [
 
 export default function BlogPage() {
   return (
-    <section className="pt-24 pb-16 px-4 sm:px-6 lg:px-8 min-h-screen bg-white dark:bg-dark-900">
+    <div className="min-h-screen bg-white dark:bg-dark-900">
+      <Header />
+      <section className="pt-24 pb-16 px-4 sm:px-6 lg:px-8 min-h-screen">
       <div className="max-w-7xl mx-auto">
         <h1 className="text-4xl font-bold mb-8"><span className="gradient-text">我的博客</span></h1>
         <p className="text-lg text-gray-600 dark:text-gray-400 mb-8">记录技术分享与实践笔记</p>
@@ -33,6 +37,8 @@ export default function BlogPage() {
           ))}
         </div>
       </div>
-    </section>
+      </section>
+      <Footer />
+    </div>
   )
 }

@@ -1,10 +1,14 @@
+import Header from '@/components/Header'
+import Footer from '@/components/Footer'
 import ResumeDownload from '@/components/ResumeDownload'
 import { siteConfig } from '@/config/site'
 import { Lock } from 'lucide-react'
 
 export default function ResumePage() {
   return (
-    <section className="pt-24 pb-16 px-4 sm:px-6 lg:px-8 min-h-screen bg-white dark:bg-dark-900">
+    <div className="min-h-screen bg-white dark:bg-dark-900">
+      <Header />
+      <section className="pt-24 pb-16 px-4 sm:px-6 lg:px-8 min-h-screen">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold mb-4">
@@ -152,6 +156,8 @@ export default function ResumePage() {
           </div>
         </div>
       </div>
-    </section>
+      </section>
+      <Footer />
+    </div>
   )
 }
