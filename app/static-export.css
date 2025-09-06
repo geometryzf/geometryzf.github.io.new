@@ -63,8 +63,8 @@
   transform: none !important;
 }
 
-/* 确保所有动画元素都可见 */
-* {
+/* 确保所有动画元素都可见，但保留响应式显示类 */
+*:not(.hidden):not(.md\\:hidden):not(.lg\\:hidden):not(.xl\\:hidden) {
   opacity: 1 !important;
 }
 
